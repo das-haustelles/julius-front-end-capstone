@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <!-- <link rel="stylesheet" href="/style.css"> -->
     <title>FEC</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/styled-components/4.2.0/styled-components.min.js" crossorigin></script>
   </head>
   <body>
     <div id="HeaderModule"></div>
@@ -11,19 +14,16 @@
     <div id="AvailabilityModule"></div>
     <div id="ReviewsPanel"></div>
 
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-    <script src="http://localhost:3000/bundle.js "></script>             <!-- Header/Julius --> 
-    <script src="http://localhost:1128/client/dist/bundle.js"></script>  <!-- Searchbar/Stanley --> 
+    <script src="http://localhost:3002/bundle.js "></script>             <!-- Header/Julius --> 
+    <script src="http://localhost:1128/client/dist/bundle.js"></script>  <!-- Searchbar/Stanley -->
     <script src="http://localhost:3004/bundle.js"></script>              <!-- Reviews/Jon --> 
-    <script src=""></script>                                  <!-- Searchbar/Stanley CSS --> 
-    <script src="http://localhost:3001/hostels/:id/bundle.js"></script>  <!-- Availability/Rich --> 
+    <script src="http://localhost:3001/hostels/:id/bundle.js"></script>  <!-- Availability/Rich -->
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->        
     <link
       rel="stylesheet"
       href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"
     />
+
     <script>
       ReactDOM.render(
         React.createElement(HeaderModule),
@@ -41,7 +41,6 @@
         React.createElement(AvailabilityModule),
         document.getElementById('AvailabilityModule')
       );
-
     </script>
   </body>
 </html>

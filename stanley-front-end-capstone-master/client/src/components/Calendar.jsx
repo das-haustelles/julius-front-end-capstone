@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import Dates from './Dates.jsx';
 
 const WordWrapper = styled.span`

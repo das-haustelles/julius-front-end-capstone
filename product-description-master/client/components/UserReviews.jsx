@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { User, Comments } from 'styled-icons/fa-solid';
 import { Calendar } from 'styled-icons/boxicons-regular';
 
