@@ -142,6 +142,8 @@ class HeaderNav extends React.Component {
             // docked={this.state.sidebarOpen}
             onSetOpen={this.onSetSidebarOpen}
             styles={{ sidebar: { background: "black" } }}
+            // overlayId={styles.sidebarOverlay}
+            // willChange={{ : {   } }}
           >
           <span className={[styles.iconHolder, styles.menuButton].join(' ')} onClick={() => this.onSetSidebarOpen(true)}>
             <img className={styles.icon} src="http://pepispubngrill.com/img/menu.png"></img>
