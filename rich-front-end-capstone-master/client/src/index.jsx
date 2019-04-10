@@ -166,5 +166,5 @@ class AvailabilityModule extends React.Component {
 }
 
 
-window.AvailabilityModule = AvailabilityModule;
-ReactDOM.render(<AvailabilityModule />, document.getElementById('app'));
+// window.AvailabilityModule = AvailabilityModule;
+ReactDOM.render(<AvailabilityModule />, document.getElementById('AvailabilityModule'));

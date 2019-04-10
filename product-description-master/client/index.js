@@ -5,5 +5,4 @@ import MiniSummaryRating from './components/MiniSummaryRating';
 import ReviewsPanel from './components/ReviewsPanel';
 
 
-window.ReviewsPanel = ReviewsPanel;
-ReactDOM.render(<ReviewsPanel />, document.getElementById('reviews'));
+ReactDOM.render(<ReviewsPanel />, document.getElementById('ReviewsPanel'));
