@@ -1,0 +1,42 @@
+version '3'
+
+services:
+  header:
+    build: julius-front-end-capstone/
+    depends_on:
+      - 'database'
+    ports:
+      - '80:3002'
+
+  searchbar:
+    build: stanley-front-end-capstone/
+    depends_on:
+      - 'database'
+    ports:
+      - 80:3003'
+
+  availability:
+    build: rich-front-end-capstone/
+    depends_on:
+      - 'database'
+    ports:
+      - '80:3001'
+
+  reviews:
+    build: product-description/
+    depends_on:
+      - 'database'
+    ports:
+      - '80:3004'
+
+  proxy:
+    build: proxy/
+    ports:
+      - '80:3005'
+
+  databaseMongo:
+    image: mongo:latest
+
+  databaseSequel:
+    image: mysql:latest
+    
